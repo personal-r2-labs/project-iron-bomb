@@ -1,7 +1,10 @@
 # Project Iron Bomb
----
 
-### Tecnologies Used:
+## About Game
+* A request, two interconnected bombs and a conspiracy ... 
+Will our IronHackers survive (and drink a beer) in this deadly game?
+
+## Tecnologies Used:
 - CSS
   - [BootStrap](https://getbootstrap.com/)
 - Javascript
