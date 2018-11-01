@@ -4,7 +4,7 @@
 
 *{
   font-family: 'VT323';
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .javascript{
@@ -153,6 +153,7 @@
   opacity: 0;
   z-index: 2;
   pointer-events: none;
+  background-size: 100% 2px, 3px 100%;
   animation: flicker 0.15s infinite;
 }
 .crt::before {
@@ -170,7 +171,7 @@
 }
 .crt {
   margin-top: 20px;
-  zanimation: textShadow 1.6s infinite;
+  animation: textShadow 1.6s infinite;
 }
 
 
