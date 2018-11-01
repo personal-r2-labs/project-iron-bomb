@@ -5,36 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
- 
+
   <script type="text/javascript" src="../libs/typeit/typeit.min.js"></script>
-  
-  <script src="../src/content/questions.js"></script>
-  <script src="../src/content/bomb.js"></script>
-  <script src="../src/content/player.js"></script>
-  <script src="../src/content/game.js"></script>
-  
-  
+  <script type="text/javascript" src="../libs/jquery/jquery-3.3.1.min.js"></script>
+
   <link rel="stylesheet" href="../libs/highlight/styles/default.css">
-<script src="../libs/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<script type="text/javascript" src="../libs/jquery/jquery-3.3.1.min.js"></script>
+  <script src="../libs/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
   <title>Document</title>
 </head>
 
 <body class="crt">
-  <div class="container">
-    <div class="column">assasa
-      <div class="row">aasasas</div>
-      <pre class="question"></pre>
-      <div class="row">aasasas</div>
-    </div>
-    <div class="column">sdsdsd</div>
+  <div id="logo"><img src="#" alt="IRON BOMB"></div>
+  <div id="bombPlayer1">
+    <ul id="timeBomb1">
+      <li id="idHour1">00</li>
+      <li id="idMin1"></li>
+      <li id="idSec1"></li>
+    </ul>
+  </div>
+  <div id="bombPlayer2">
+    <ul id="timeBomb">
+      <li id="idHour2">00</li>
+      <li id="idMin2"></li>
+      <li id="idSec2"></li>
+    </ul>
+  </div>
+  <div>
+    <pre id="idQuestion"></pre>
+    <input type="text">
+    <button id="anwser">Send</button>
   </div>
 
-  
+  <script src="../src/content/questions.js"></script>
+  <script src="../src/content/bomb.js"></script>
+  <script src="../src/content/player.js"></script>
+  <script src="../src/content/game.js"></script>
+  <script src="../src/content/game-boot.js"></script>
+
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
-  
+
 </body>
 
 </html>

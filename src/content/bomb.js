@@ -17,3 +17,8 @@ ClockBomb.prototype.start = function () {
   }, 1000);
 };
 ClockBomb.prototype.stop = function () { clearInterval(this.countDown); };
+
+ClockBomb.prototype.printTime = function (idMin, idSec) {
+  idMin.text(this.minClock);
+  idSec.text(this.secClock);
+};
