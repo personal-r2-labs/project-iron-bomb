@@ -17,27 +17,42 @@
 </head>
 
 <body class="crt">
-  <div id="logo"><img src="#" alt="IRON BOMB"></div>
-  <div id="bombPlayer1">
-    <ul id="timeBomb1">
-      <li id="idHour1">00</li>
-      <li id="idMin1"></li>
-      <li id="idSec1"></li>
-    </ul>
+  <!-- <div id="logo"><img src="../img/logo.png" alt="IRON BOMB"></div> -->
+  <div class="container d-lg-flex justify-content-between" style= "border: 1px blue solid; ">
+    <div class="bItem" style="border: 1px red solid;">
+      <span class="player" id="player1"></span>
+      <figure class="bomb">
+        <div class="face top">
+          <p id="idSec1"></p>
+        </div>
+        <div class="face front">
+          <p id="idMin1"></p>
+        </div>
+        <div class="face left">
+          <p id="idHour1">00</p>
+        </div>
+      </figure>
+    </div>
+    <div class="bItem" style="border: 1px red solid;  display: none">
+      <span class="player" id="player2"></span>
+      <figure class="bomb">
+        <div class="face top">
+          <p id="idSec2"></p>
+        </div>
+        <div class="face front">
+          <p id="idMin2"></p>
+        </div>
+        <div class="face left">
+          <p id="idHour2">00</p>
+        </div>
+      </figure>
+    </div>
+    <div class="bQuestion" style="border: 1px red solid">
+      <pre><code id="idQuestion"></code></pre>
+      <input type="text" id="answer" placeholder="answer">
+      <button id="answer-btn">Send</button>
+    </div>
   </div>
-  <div id="bombPlayer2">
-    <ul id="timeBomb">
-      <li id="idHour2">00</li>
-      <li id="idMin2"></li>
-      <li id="idSec2"></li>
-    </ul>
-  </div>
-  <div>
-    <pre><code id="idQuestion"></code></pre>
-    <input type="text" id="answer" placeholder="answer">
-    <button id="answer-btn">Send</button>
-  </div>
-
   <script src="../src/content/questions.js"></script>
   <script src="../src/content/bomb.js"></script>
   <script src="../src/content/player.js"></script>

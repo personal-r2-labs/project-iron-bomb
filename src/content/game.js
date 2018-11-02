@@ -6,19 +6,23 @@ const idMin2 = $('#idMin2');
 const idSec1 = $('#idSec1');
 const idSec2 = $('#idSec2');
 const idQuestion = $('#idQuestion');
-// let IDX1 = 0;
-// let IDX2 = 0;
+
+// Create the new game Object
 const game = new Game();
+
+//
 const RESULT = window.location.href
   .slice(window.location.href.indexOf('?') + 1)
   .split('&');
 
+// Constructor function Game
 function Game() {
   this.turn = 1;
   this.questions = [];
   this.questionIDX = 0;
 }
 
+// Function to add questions to game
 Game.prototype.addQuestions = function (arr, qt) {
   if (qt >= arr.length) this.questions = arr;
   let ramdomIndex;
@@ -31,14 +35,17 @@ Game.prototype.addQuestions = function (arr, qt) {
     this.questions.push(obj[0]);
   }
 };
+
+// Function to add players to game
 Game.prototype.addPlayer = function (nameP1, nameP2) {
   this.player1 = new Player(nameP1);
   this.player2 = new Player(nameP2);
 };
 
+// Validate the answer from player and switch player
 Game.prototype.answer = function () {
   const ANSWER = document.getElementById('answer').value;
-  console.log(ANSWER);
+  const BOMB = $('.bItem');
   const P1 = game.player1;
   const P2 = game.player2;
   if (this.turn === 1) {
@@ -53,6 +60,7 @@ Game.prototype.answer = function () {
     this.turn = 2;
     P1.bomb.stop();
     P2.bomb.start();
+    BOMB.toggle();
   } else if (this.turn === 2) {
     if (game.questions[game.questionIDX].result === ANSWER) {
       P2.error = 0;
@@ -65,14 +73,15 @@ Game.prototype.answer = function () {
     this.turn = 1;
     P2.bomb.stop();
     P1.bomb.start();
+    BOMB.toggle();
   }
-  console.log(P1.score, P2.score, P1.error, P2.error);
   if (P1.error === -2 || P2.error === -2) game.lose();
   if (game.questionIDX >= game.questions.length - 1) game.won();
   $('span').remove();
   idQuestion.append(game.questions[game.questionIDX].code);
 };
 
+// Function to
 Game.prototype.won = function () {
   const P1 = game.player1;
   const P2 = game.player2;
@@ -89,9 +98,8 @@ Game.prototype.lose = function () {
   window.location.href = 'lose.html';
 };
 
+// Function to initialize the game
 function gameStart() {
-  // initialize the game object
-
   // Add names to players
   game.addPlayer(RESULT[0], RESULT[1]);
 
@@ -101,12 +109,15 @@ function gameStart() {
   // Display the first question
   idQuestion.append(game.questions[game.questionIDX].code);
 
+  // Set Clock and print the time on clock
   setClock();
   printTime();
 
+  // Start the clock from player 1
   game.player1.bomb.start();
 }
 
+// 
 function setClock() {
   game.player1.bomb.idMin = idMin1;
   game.player1.bomb.idSec = idSec1;
@@ -114,11 +125,14 @@ function setClock() {
   game.player2.bomb.idSec = idSec2;
 }
 
+// Display time on objects bombs
 function printTime() {
   game.player1.bomb.printTime();
   game.player2.bomb.printTime();
 }
 
+// Click button Answer
 $('#answer-btn').click(function () {
   game.answer();
+  document.getElementById('answer').value = '';
 });
