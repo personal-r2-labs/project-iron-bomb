@@ -1,62 +1,62 @@
 /* eslint-disable no-unused-vars */
 const QEASY = [
   {
-    code: '<span> Question 1 </span>',
+    code: '<span> Question 1 - true </span>',
     result: 'true',
     points: 100
   },
   {
-    code: '<span> Question 2 </span>',
+    code: '<span> Question 2 - false </span>',
+    result: 'false',
+    points: 100
+  },
+  {
+    code: '<span> Question 3 - bool </span>',
+    result: 'bool',
+    points: 150
+  },
+  {
+    code: '<span> Question 4 - 1000 </span>',
+    result: '1000',
+    points: 100
+  },
+  {
+    code: '<span> Question 5 - true  </span>',
     result: 'true',
     points: 100
   },
   {
-    code: '<span> Question 3 </span>',
+    code: '<span> Question 6 - true  </span>',
     result: 'true',
     points: 100
   },
   {
-    code: '<span> Question 4 </span>',
+    code: '<span> Question 7 - true  </span>',
     result: 'true',
     points: 100
   },
   {
-    code: '<span> Question 5 </span>',
+    code: '<span> Question 8 - true  </span>',
     result: 'true',
     points: 100
   },
   {
-    code: '<span> Question 6 </span>',
+    code: '<span> Question 9 - true  </span>',
     result: 'true',
-    points: 100
+    points: 150
   },
   {
-    code: '<span> Question 7 </span>',
+    code: '<span> Question 10 - true  </span>',
     result: 'true',
-    points: 100
+    points: 150
   },
   {
-    code: '<span> Question 8 </span>',
+    code: '<span> Question 11 - true  </span>',
     result: 'true',
-    points: 100
+    points: 200
   },
   {
-    code: '<span> Question 9 </span>',
-    result: 'true',
-    points: 100
-  },
-  {
-    code: '<span> Question 10 </span>',
-    result: 'true',
-    points: 100
-  },
-  {
-    code: '<span> Question 11 </span>',
-    result: 'true',
-    points: 100
-  },
-  {
-    code: '<span> Question 12 </span>',
+    code: '<span> Question 12 - true  </span>',
     result: 'true',
     points: 100
   }
