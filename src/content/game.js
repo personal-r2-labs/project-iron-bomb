@@ -95,13 +95,13 @@ Game.prototype.won = function () {
   const P2 = game.player2;
   let result;
   if (P1.score > P2.score) {
-    result = `${P1.name}&${P1.score}&${P1.bomb.minClock}&${P1.bomb.secClock}`;
+    result = `P1&${P1.name}&${P1.score}&${P1.bomb.minClock}&${P1.bomb.secClock}`;
   } else if (P1.score < P2.score) {
-    result = `${P2.name}&${P2.score}&${P2.bomb.minClock}&${P2.bomb.secClock}`;
+    result = `P2&${P2.name}&${P2.score}&${P2.bomb.minClock}&${P2.bomb.secClock}`;
   } else if (P1.bomb.time > P2.bomb.time) {
-    result = `${P1.name}&${P1.score}&${P1.bomb.minClock}&${P1.bomb.secClock}`;
-  } else {
-    result = `${P2.name}&${P2.score}&${P2.bomb.minClock}&${P2.bomb.secClock}`;
+    result = `P1&${P1.name}&${P1.score}&${P1.bomb.minClock}&${P1.bomb.secClock}`;
+  } else if (P1.bomb.time < P2.bomb.time) {
+    result = `P2&${P2.name}&${P2.score}&${P2.bomb.minClock}&${P2.bomb.secClock}`;
   }
   window.location.href = `won.html?${result}`;
 };

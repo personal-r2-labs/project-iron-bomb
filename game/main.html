@@ -12,13 +12,30 @@
 
 <body>
   <div class="crt">
-    <div class="d-flex justify-content-center iron-hack"><div class="hexagon">IRON HACK</div></div>
-    
-    <label for="p1">Player 1 Name</label>
-    <input type="text" id="p1" placeholder="Name">
-    <label for="p2">Player 2 Name</label>
-    <input type="text" id="p2" placeholder="Name">
-    <button id="start-game" type="button" class="btn btn-danger">Start Game!</button>
+    <div class="container d-flex justify-content-between game" >
+      <div class=" d-flex bomb-item align-middle">
+        <figure class="bomb align-self-center" >
+          <div class="face top">
+            <p id="top" style="font-size:1.8em;">IRON</p>
+          </div>
+          <div class="face front">
+            <p id="front" style="font-size:1.5em;">BOMB</p>
+          </div>
+          <div class="face left">
+            <p id="left" style="font-size:2.2em;">💣</p>
+          </div>
+        </figure>
+        
+      </div>
+      <div class="players-input">
+        <label for="p1" style="font-size:1em;">IronHacker 1</label>
+        <input type="text" id="p1" class="input-group mb-3" placeholder="Name">
+        <label for="p2">IronHacker 2</label>
+        <input type="text" id="p2" class="input-group mb-3" placeholder="Name"> 
+        <br>
+        <button id="start-game" type="button" class="btn btn-danger btn-lg btn-block">Start Game!</button>
+      </div>
+    </div>
   </div>
   <script src="../src/content/main.js"></script>
   <link rel="stylesheet" href="../css/style.css">

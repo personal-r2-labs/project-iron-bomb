@@ -10,12 +10,25 @@
   <script type="text/javascript" src="../libs/typeit/typeit.min.js"></script>
 </head>
 
-<body>
-  <div class="finish">
-    <p id="you-win"></p>
-    <canvas id="win"></canvas>
-    <button type="button" class="btn btn-danger">Play Again?</button>
+<body class="crt">
+  <div class="container d-flex justify-content-center game">
+    <div class="bomb-item">
+      <div class="player d-flex justify-content-center" id="player"></div>
+      <figure class="bomb">
+        <div class="face top">
+          <p id="top"></p>
+        </div>
+        <div class="face front">
+          <p id="front" style="font-size:1.1em;"></p>
+        </div>
+        <div class="face left">
+          <p id="left" style="font-size:1.8em;"></p>
+        </div>
+      </figure>
+      <button type="button" id="btn-play-again" class="btn btn-danger btn-lg btn-block">Play Again?</button>
+    </div>
   </div>
+  <script src="../src/content/won.js"></script>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
 </body>

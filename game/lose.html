@@ -5,17 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>You Lose</title>
+  <title>You Win</title>
   <script type="text/javascript" src="../libs/jquery/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="../libs/typeit/typeit.min.js"></script>
 </head>
 
-<body>
-  <div class="finish">
-    <p id="you-lose"></p>
-    <canvas id="lose"></canvas>
-    <button type="button" class="btn btn-danger">Play Again?</button>
+<body class="crt">
+  <div class="container d-flex game justify-content-center">
+    <div class="bomb-item">
+      <div class="player d-flex justify-content-center" id="player">YOU LOSE!</div>
+      <figure class="bomb">
+        <div class="face top">
+          <p id="top">)=</p>
+        </div>
+        <div class="face front">
+          <p id="front">)-:</p>
+        </div>
+        <div class="face left">
+          <p id="left">)':</p>
+        </div>
+      </figure>
+      <button type="button" id="btn-play-again" class=" btn btn-danger btn-lg btn-block">Play Again?</button>
+    </div>
+    
   </div>
+  <script src="../src/content/lose.js"></script>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
 </body>
