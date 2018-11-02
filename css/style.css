@@ -3,6 +3,8 @@
 * {
   font-family: 'VT323';
   font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 .javascript {
@@ -285,16 +287,38 @@ p {
   }
 }
 
-.bQuestion {
+.bomb-question {
   width: 50%;
   height: 600px;
 }
 
-.bItem {
+.bomb-item {
   width: 400px;
   height: 600px;
+  text-align: center;
+  font-size: 4.3em
+}
+
+.player {
+  margin-left: 15%;
 }
 
 .bomb {
-  margin: 10%;
+  margin-top: 8%;
+  margin-left: 25%;
+  margin-bottom: 35%;
+}
+
+#
+.btn-outline-danger {
+  width: 300px;
+}
+
+.game {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+background: #e2e2e2; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

@@ -20,6 +20,7 @@ ClockBomb.prototype.start = function () {
 };
 ClockBomb.prototype.stop = function () { clearInterval(this.countDown); };
 
+// Print time on bomb object
 ClockBomb.prototype.printTime = function () {
   this.idMin.text(this.minClock);
   this.idSec.text(this.secClock);

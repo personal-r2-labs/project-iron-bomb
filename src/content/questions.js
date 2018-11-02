@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const QEASY = [
   {
     code: '<span> Question 1 </span>',

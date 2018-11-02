@@ -5,22 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <script type="text/javascript" src="../libs/typeit/typeit.min.js"></script>
   <script type="text/javascript" src="../libs/jquery/jquery-3.3.1.min.js"></script>
-
   <link rel="stylesheet" href="../libs/highlight/styles/default.css">
   <script src="../libs/highlight/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-
   <title>IRON BOMB</title>
 </head>
 
 <body class="crt">
-  <!-- <div id="logo"><img src="../img/logo.png" alt="IRON BOMB"></div> -->
-  <div class="container d-lg-flex justify-content-between" style= "border: 1px blue solid; ">
-    <div class="bItem" style="border: 1px red solid;">
-      <span class="player" id="player1"></span>
+  <div class="container d-lg-flex justify-content-between game">
+    <div class="bomb-item">
+      <div class="player" id="player1">ROMULO</div>
       <figure class="bomb">
         <div class="face top">
           <p id="idSec1"></p>
@@ -32,9 +28,10 @@
           <p id="idHour1">00</p>
         </div>
       </figure>
+      <div class="player" id="player1-score">0 POINTS</div>
     </div>
-    <div class="bItem" style="border: 1px red solid;  display: none">
-      <span class="player" id="player2"></span>
+    <div class="bomb-item" style="display: none">
+      <div class="player" id="player2">FRANCA</div>
       <figure class="bomb">
         <div class="face top">
           <p id="idSec2"></p>
@@ -46,11 +43,17 @@
           <p id="idHour2">00</p>
         </div>
       </figure>
+      <div class="player" id="player2-score">0 POINTS</div>
     </div>
-    <div class="bQuestion" style="border: 1px red solid">
+    <div class="bomb-question">
       <pre><code id="idQuestion"></code></pre>
-      <input type="text" id="answer" placeholder="answer">
-      <button id="answer-btn">Send</button>
+      <div class="input-group mb-3">
+        <input id="answer" type="text" class="form-control" placeholder="Answer here" aria-label="Recipient's username"
+          aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button id="answer-btn" class="btn btn-outline-secondary" type="button">SEND</button>
+        </div>
+      </div>
     </div>
   </div>
   <script src="../src/content/questions.js"></script>
@@ -58,10 +61,8 @@
   <script src="../src/content/player.js"></script>
   <script src="../src/content/game.js"></script>
   <script src="../src/content/game-boot.js"></script>
-
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
-
 </body>
 
 </html>
