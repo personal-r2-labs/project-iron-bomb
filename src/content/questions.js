@@ -1,61 +1,61 @@
 const QEASY = [
   {
-    code: "<code class= 'javascript'> Question 1 <code>",
+    code: '<span> Question 1 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 2 <code>",
+    code: '<span> Question 2 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 3 <code>",
+    code: '<span> Question 3 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 4 <code>",
+    code: '<span> Question 4 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 5 <code>",
+    code: '<span> Question 5 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 6 <code>",
+    code: '<span> Question 6 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 7 <code>",
+    code: '<span> Question 7 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 8 <code>",
+    code: '<span> Question 8 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 9 <code>",
+    code: '<span> Question 9 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 10 <code>",
+    code: '<span> Question 10 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 11 <code>",
+    code: '<span> Question 11 </span>',
     result: 'true',
     points: 100
   },
   {
-    code: "<code class= 'javascript'> Question 12 <code>",
+    code: '<span> Question 12 </span>',
     result: 'true',
     points: 100
   }
